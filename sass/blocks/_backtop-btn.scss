@@ -1,0 +1,30 @@
+.backtop-btn {
+    position: fixed;
+    display: block;
+    width: 60px;
+    bottom: 50px;
+    right: 50px;
+
+    z-index: 10;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        right: 20px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        right: 5px;
+    }
+
+    & svg {
+        fill: $accent-color;
+    }
+}
+
