@@ -50,40 +50,45 @@ img, svg {
 }
 
 /* Form */
-input, textarea, button, select {
+button,
+input,
+textarea,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  outline: none;
   font-family: inherit;
   font-size: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button, input[type="submit"] {
-  display: inline-block;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   background-color: transparent;
-  background: none;
-  cursor: pointer;
 }
-
-input:focus, input:active,
-button:focus, button:active {
+button,
+input,
+textarea,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
 }
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+button,
+input,
+textarea,
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
 }
-
-label {
-  cursor: pointer;
-}
-
-legend {
-  display: block;
+button,
+input,
+textarea,
+input::placeholder,
+textarea::placeholder {
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
 }
 
 html {
@@ -131,46 +136,30 @@ body {
   line-height: 1.15;
 }
 
-.svg-adres {
-  width: 23px;
-  height: 33px;
-  fill: black;
-}
-
-.svg-email {
-  width: 24px;
-  height: 24px;
-  fill: #574E56;
-}
-
+/* ====svg icons ===== */
 .svg-arrow {
   width: 12px;
   height: 14px;
   fill: white;
 }
 
-.svg-behance {
-  width: 24px;
-  height: 15px;
-  fill: black;
-}
-
-.svg-istagram {
-  width: 24px;
-  height: 24px;
-  fill: black;
-}
-
-.svg-phone {
-  width: 18px;
-  height: 24px;
-  fill: black;
-}
-
-.svg-pinterest {
+.svg-email,
+.svg-be,
+.svg-inst,
+.svg-phone,
+.svg-pin,
+.svg-map {
   width: 24px;
   height: 24px;
-  fill: black;
+  fill: #000000;
+}
+
+.svg-email {
+  fill: #574E56;
+}
+
+.svg-map {
+  height: 33px;
 }
 
 .h1, .h2 {
@@ -212,6 +201,31 @@ body {
 }
 .backtop-btn svg {
   fill: #F6D5A7;
+}
+
+.button {
+  display: inline-block;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: #F6D5A7;
+  height: 65px;
+  line-height: 65px;
+  cursor: pointer;
+  color: #574E56;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+  -webkit-transition: background-color 0.2s ease-in,  color 0.3s ease-in;
+  transition: background-color 0.2s ease-in,  color 0.3s ease-in;
+}
+.button:hover {
+  background-color: #ffc779;
+  color: aliceblue;
+}
+.button:active {
+  background-color: #fa9200;
+  color: aliceblue;
 }
 
 .header {
@@ -533,6 +547,44 @@ body {
 .num {
   color: #fff;
   opacity: 0;
+}
+
+.contacts {
+  padding-top: 88px;
+  padding-bottom: 146px;
+}
+
+.contacts__title {
+  margin-bottom: 91px;
+}
+
+.contacts-form-wrapper {
+  width: 505px;
+}
+
+.form-input, .form-textarea {
+  display: block;
+  padding-left: 19px;
+  padding-right: 19px;
+  height: 65px;
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  color: #ACA9A9;
+}
+
+.form-textarea {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  height: 246px;
+  resize: none;
+}
+
+.form-item + .form-item {
+  margin-top: 20px;
+}
+
+.contacts-list__icon svg {
+  fill: red;
 }
 
 /*# sourceMappingURL=main.css.map */

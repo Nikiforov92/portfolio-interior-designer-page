@@ -91,9 +91,9 @@
 			</div>
 		</header>
 
-		<main class="main">
+		<main class="main none">
 			<!-- Portfolio -->
-			<section class="portfolio" >
+			<section class="portfolio none" >
 				<div class="container">
 					<div class="portfolio__title">
 						<h2 class="h2" id="portfolio">Портфолио</h2>
@@ -140,7 +140,7 @@
 				</div>
 			</section>
 			<!-- About -->
-			<section class="about" id="about">
+			<section class="about none" id="about">
 				<div class="container">
 					<div class="about__title">
 						<h2 class="h2">Обо мне</h2> 
@@ -175,10 +175,41 @@
 			<section class="contacts" id="contacts">
 				<div class="container">
 					<div class="contacts__wrapper">
-						<div class="container__title" id="contacts">
+						<div class="contacts__title" id="contacts">
 							<h2 class="h2">Контакты</h2>
 						</div>
-						<div class="container__content"></div>
+						<div class="contacts__content">
+							<div class="contacts-form-wrapper">
+								<form action="" class="contact-form">
+									<!-- input Имя -->
+									<div class="form-item">
+										<input class="form-input" type="text" name="name" placeholder="Ваше имя" required>
+									</div>
+									<!-- input Email -->
+									<div class="form-item">
+										<input class="form-input" type="email" name="email" placeholder="Ваш email" required autocomplete>
+									</div>
+									<!-- TextArea -->
+									<div class="form-item">
+										<textarea class="form-textarea" name="message" placeholder="Сообщение"></textarea>
+									</div>
+									<!-- Button -->
+									<div class="form-item">
+										<button type="submit" class="button">Отправить</button>
+									</div>
+								</form>
+							</div>
+							<div class="contacts-list">
+								<div class="contacts-list__item">
+									<div class="contacts-list__icon">
+										<svg class="svg-phone">
+											<use href="./img/icons/svg-sprite.svg#svg-phone"></use>
+										</svg>
+									</div>
+									<div class="contacts-list__text"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>

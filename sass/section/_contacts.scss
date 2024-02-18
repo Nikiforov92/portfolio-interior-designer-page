@@ -1,11 +1,37 @@
 .contacts {
+    padding-top: 88px;
+    padding-bottom: 146px;
 }
 
-.contacts__wrapper {
+.contacts__title {
+    margin-bottom: 91px;
 }
 
-.container__title {
+.contacts-form-wrapper {
+    width: 505px;
 }
 
-.container__content {
+.form-input, .form-textarea {
+    display: block;
+    padding-left: 19px;
+    padding-right: 19px;
+    height: 65px;
+    width: 100%;
+    border: 1px solid $form-border-color;
+    color: $form-text-color
+}
+
+.form-textarea {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    height: 246px;
+    resize: none;
+}
+
+.form-item + .form-item {
+    margin-top: 20px;
+}
+
+.contacts-list__icon svg{
+    fill: red;
 }
