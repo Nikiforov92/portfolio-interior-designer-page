@@ -3,6 +3,21 @@
     color: $text-color;
     font-size: 80px;
     line-height: 1.2;
+
+    /* Tablet от 1199px до 992px*/
+    @media (max-width: 1199px) {
+        font-size: 70px;
+    }
+
+    /* Mobile от 991px до 768px*/
+    @media (max-width: 991px) {
+        font-size: 60px;
+    }
+
+    /* Mobile XS от 767px до 360px */
+    @media (max-width: 767px) {
+        line-height: 1.33;
+    }
 }
 
 .h2 {
