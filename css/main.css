@@ -585,11 +585,22 @@ body {
   color: #ACA9A9;
 }
 
+.form-input:focus {
+  border: 1px solid #fa9200;
+  -webkit-box-shadow: 0 0 10px #F6D5A7;
+          box-shadow: 0 0 10px #F6D5A7;
+}
+
 .form-textarea {
   padding-top: 27px;
   padding-bottom: 27px;
   height: 246px;
   resize: none;
+}
+.form-textarea:focus {
+  border: 1px solid #fa9200;
+  -webkit-box-shadow: 0 0 10px #F6D5A7;
+          box-shadow: 0 0 10px #F6D5A7;
 }
 
 .form-item + .form-item {
@@ -610,6 +621,14 @@ body {
   display: flex;
   -webkit-column-gap: 16px;
           column-gap: 16px;
+}
+.contacts-list__item .contacts-list__text a {
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+.contacts-list__item .contacts-list__icon svg {
+  -webkit-transition: fill 0.3s ease-in;
+  transition: fill 0.3s ease-in;
 }
 .contacts-list__item:hover .contacts-list__text a {
   color: #ffc779;

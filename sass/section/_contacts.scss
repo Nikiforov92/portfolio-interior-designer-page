@@ -25,7 +25,12 @@
     height: 65px;
     width: 100%;
     border: 1px solid $form-border-color;
-    color: $form-text-color
+    color: $form-text-color;
+}
+
+.form-input:focus {
+    border: 1px solid $accent-color-active;
+    box-shadow: 0 0 10px $accent-color;
 }
 
 .form-textarea {
@@ -33,7 +38,14 @@
     padding-bottom: 27px;
     height: 246px;
     resize: none;
+
+    &:focus {
+        border: 1px solid $accent-color-active;
+        box-shadow: 0 0 10px $accent-color;
+    }
 }
+
+
 
 .form-item + .form-item {
     margin-top: 20px;
@@ -49,6 +61,13 @@
 .contacts-list__item {
     display: flex;
     column-gap: 16px;
+
+    & .contacts-list__text a {
+        transition: color 0.3s ease-in;
+    }
+    & .contacts-list__icon svg {
+        transition: fill 0.3s ease-in;
+    }
 
     &:hover .contacts-list__text a {
         color: $accent-color-hover;
