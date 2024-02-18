@@ -7,8 +7,15 @@
     margin-bottom: 91px;
 }
 
+.contacts__content {
+    display: flex;
+    column-gap: 115px;
+    align-items: start;
+}
+
 .contacts-form-wrapper {
     width: 505px;
+    flex-shrink: 0;
 }
 
 .form-input, .form-textarea {
@@ -32,6 +39,30 @@
     margin-top: 20px;
 }
 
-.contacts-list__icon svg{
-    fill: red;
+.contacts-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 95px;
+    row-gap: 61px;
+}
+
+.contacts-list__item {
+    display: flex;
+    column-gap: 16px;
+
+    &:hover .contacts-list__text a {
+        color: $accent-color-hover;
+    }
+
+    &:hover .contacts-list__icon svg {
+        fill: $accent-color-hover;
+    }
+}
+
+.contacts-list__item .text-upper {
+    margin-bottom: 3px;
+}
+
+.contacts-list__item .text-upper + * {
+    color: $text-adres-color;
 }
