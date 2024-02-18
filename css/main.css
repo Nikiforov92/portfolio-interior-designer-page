@@ -561,6 +561,20 @@ body {
 .portfolio {
   padding-top: 88px;
   padding-bottom: 100px;
+  /* Desctop от 1439px до 1200px */
+  /* Tablet от 1199px до 992px*/
+}
+@media (max-width: 1439px) {
+  .portfolio {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 1199px) {
+  .portfolio {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 
 .portfolio__title {
@@ -573,9 +587,25 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  row-gap: 20px;
+  gap: 20px;
+  /* Desctop от 1439px до 1200px */
+  /* Mobile от 991px до 768px*/
+  /* Mobile XS от 767px до 360px */
+}
+@media (max-width: 1439px) {
+  .portfolio-content {
+    gap: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .portfolio-content {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-content {
+    display: none;
+  }
 }
 
 .portfolio-card {
@@ -583,6 +613,9 @@ body {
   height: 440px;
   overflow: hidden;
   border-radius: 5px;
+  /* Desctop от 1439px до 1200px */
+  /* Tablet от 1199px до 992px*/
+  /* Mobile от 991px до 768px*/
 }
 .portfolio-card img {
   -webkit-transition: -webkit-transform 0.5s ease-in;
@@ -600,6 +633,47 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+@media (max-width: 1439px) {
+  .portfolio-card {
+    width: 360px;
+    height: 396px;
+  }
+}
+@media (max-width: 1199px) {
+  .portfolio-card {
+    width: 300px;
+    height: 330px;
+  }
+}
+@media (max-width: 991px) {
+  .portfolio-card {
+    width: 220px;
+    height: 242px;
+  }
+}
+
+.portfolio-content-slider {
+  display: none;
+  /* Mobile XS от 767px до 360px */
+}
+.portfolio-content-slider .owl-dots button.owl-dot.active span {
+  /* Mobile XS от 767px до 360px */
+}
+@media (max-width: 767px) {
+  .portfolio-content-slider .owl-dots button.owl-dot.active span {
+    background-color: #F6D5A7;
+  }
+}
+.portfolio-content-slider .owl-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .portfolio-content-slider {
+    display: block;
+    padding-top: 25px;
+  }
+}
 
 .about {
   padding-top: 100px;
@@ -607,6 +681,13 @@ body {
   background-color: #574E56;
   border: 1px solid #000;
   color: #fff;
+  /* Desctop от 1439px до 1200px */
+}
+@media (max-width: 1439px) {
+  .about {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 .about__title {
@@ -674,6 +755,13 @@ body {
 .contacts {
   padding-top: 88px;
   padding-bottom: 146px;
+  /* Desctop от 1439px до 1200px */
+}
+@media (max-width: 1439px) {
+  .contacts {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 
 .contacts__title {

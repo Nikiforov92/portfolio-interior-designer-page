@@ -12,8 +12,23 @@ $(document).ready(function(){
     $('.slider-next').click(function() {
         $(".header-slider").trigger('next.owl.carousel');
     });
+
     $('.slider-prev').click(function() {
         $(".header-slider").trigger('prev.owl.carousel');
+    });
+
+    //portfolio-content-slider 
+    $(".portfolio-content-slider").owlCarousel({
+        items: 1,
+        loop: true,
+        smartSpeed: 600,
+        autoplay: true,
+        autoplayTimeout: 5000, 
+        autoplayHoverPause: true,
+        stagePadding: 55,
+        margin: 15,
+        center: true,
+        autoWidth: true
     });
 
     // Fancybox 

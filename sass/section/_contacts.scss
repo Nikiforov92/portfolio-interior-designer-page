@@ -1,6 +1,12 @@
 .contacts {
     padding-top: 88px;
     padding-bottom: 146px;
+
+    /* Desctop от 1439px до 1200px */
+    @media (max-width: 1439px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
 }
 
 .contacts__title {

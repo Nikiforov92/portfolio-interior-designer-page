@@ -1,6 +1,18 @@
 .portfolio {
     padding-top: 88px;
     padding-bottom: 100px;
+
+    /* Desctop от 1439px до 1200px */
+    @media (max-width: 1439px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    /* Tablet от 1199px до 992px*/
+    @media (max-width: 1199px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }
 
 .portfolio__title {
@@ -10,8 +22,22 @@
 .portfolio-content {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
+    gap: 20px;
+
+    /* Desctop от 1439px до 1200px */
+    @media (max-width: 1439px) {
+        gap: 15px;
+    }
+
+    /* Mobile от 991px до 768px*/
+    @media (max-width: 991px) {
+        gap: 20px;
+    }
+
+    /* Mobile XS от 767px до 360px */
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .portfolio-card {
@@ -33,4 +59,48 @@
         transform: scale(1.05);
         box-shadow: none;
     }
+
+    /* Desctop от 1439px до 1200px */
+    @media (max-width: 1439px) {
+        width: 360px;
+        height: 396px;
+    }
+
+    /* Tablet от 1199px до 992px*/
+    @media (max-width: 1199px) {
+        width: 300px;
+        height: 330px;
+    }
+
+    /* Mobile от 991px до 768px*/
+    @media (max-width: 991px) {
+        width: 220px;
+        height: 242px;
+    }
+}
+
+
+.portfolio-content-slider {
+    display: none;
+    // background-color: #000;
+
+    .owl-dots button.owl-dot.active span {
+        /* Mobile XS от 767px до 360px */
+        @media (max-width: 767px) {
+            background-color: $accent-color;
+        }
+    }    
+
+    & .owl-dots {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* Mobile XS от 767px до 360px */
+    @media (max-width: 767px) {
+        display: block;
+        padding-top: 25px;
+    }
+
+
 }

@@ -3,7 +3,13 @@
     padding-bottom: 242px;
     background-color: $text-color;
     border: 1px solid #000;
-    color:#fff
+    color:#fff;
+
+     /* Desctop от 1439px до 1200px */
+    @media (max-width: 1439px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
 }
 
 .about__title {

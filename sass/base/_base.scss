@@ -41,11 +41,13 @@ body {
     /* Mobile XS от 767px до 360px */
     @media (max-width: 767px) {
         width: 360px;
+        // width: 100%;
     }
 
         /* Mobile XS от 360px до 320px */
         @media (max-width: 360px) {
             width: 320px;
+            // width: 100%;
         }
 }
 
