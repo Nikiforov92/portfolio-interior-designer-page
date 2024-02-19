@@ -10,6 +10,12 @@
         padding-top: 90px;
         padding-bottom: 90px;
     }
+
+    /* Tablet от 1199px до 992px*/
+    @media (max-width: 1199px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }
 
 .about__title {
@@ -17,12 +23,35 @@
    & .h2 {
         color: #fff;
     }
+
+    /* Mobile XS от 767px до 360px */
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
 }
 
 .about__content {
     display: flex;
     align-items: center;
     column-gap: 170px;
+
+    /* Tablet от 1199px до 992px*/
+    @media (max-width: 1199px) {
+        align-items: start;
+        column-gap: 50px;
+    }
+
+    /* Mobile от 991px до 768px*/
+    @media (max-width: 991px) {
+        column-gap: 30px;
+    }
+
+    /* Mobile XS от 767px до 360px */
+    @media (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .about__img {
@@ -34,10 +63,26 @@
     & img {
         border-radius: 5px;
     }
+
+    /* Tablet от 1199px до 992px*/
+    @media (max-width: 1199px) {
+        width: 300px;
+        height: 321px;
+    }
+
+    /* Mobile от 991px до 768px*/
+    @media (max-width: 991px) {
+        width: 240px;
+        height: 256px;
+    }
 }
 
 .about__desc {
     width: 456px;
+    /* Tablet от 1199px до 992px*/
+    @media (max-width: 1199px) {
+        max-width: 100%;
+    }
 }
 
 .about__text {
@@ -47,12 +92,27 @@
     & p+p {
         margin-top: 25px;
     }
+
+    /* Mobile от 991px до 768px*/
+    @media (max-width: 991px) {
+        margin-bottom: 10px;
+    }
 }
 
 .about__statistic {
     display: flex;
     justify-content: space-around;
     text-align: center;
+
+    /* Mobile от 991px до 768px*/
+    @media (max-width: 991px) {
+        justify-content: space-between;
+    }
+
+    /* Mobile XS от 767px до 360px */
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .about__statistic-item {
@@ -61,6 +121,12 @@
         color: $accent-color;
         line-height: 1.2;
         font-family: 'Lora', serif;
+
+        /* Tablet от 1199px до 992px*/
+        @media (max-width: 1199px) {
+            font-size: 80px;
+            line-height: 1.25;
+        }
     }
 }
 

@@ -82,9 +82,19 @@
 
 .portfolio-content-slider {
     display: none;
-    // background-color: #000;
+
+    &.owl-carousel.owl-loaded {
+        display: none;
+
+        /* Mobile XS от 767px до 360px */
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
 
     .owl-dots button.owl-dot.active span {
+
         /* Mobile XS от 767px до 360px */
         @media (max-width: 767px) {
             background-color: $accent-color;
